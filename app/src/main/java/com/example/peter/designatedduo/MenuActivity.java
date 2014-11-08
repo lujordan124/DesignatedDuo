@@ -16,10 +16,10 @@ public class MenuActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        Button friend = (Button) findViewById(R.id.friendlist);
-        Button newduo = (Button) findViewById(R.id.newduo);
-        Button current = (Button) findViewById(R.id.current);
-        Button options = (Button) findViewById(R.id.options);
+        Button friend = (Button) findViewById(R.id.button_friend);
+        Button newduo = (Button) findViewById(R.id.button_newduo);
+        Button current = (Button) findViewById(R.id.button_current);
+        Button options = (Button) findViewById(R.id.button_options);
         friend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MenuActivity.this, FriendListActivity.class);

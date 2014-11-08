@@ -1,30 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="120dp"
+    android:paddingBottom="16dp"
+    android:id="@+id/activity_menu"
+    android:background="#000">
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="96dp"
         android:layout_height="wrap_content"
+        android:id ="@+id/button_newduo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
         android:text="Current Duo"
-        android:id="@+id/current" />
-
+        android:layout_marginBottom="16dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="96dp"
         android:layout_height="wrap_content"
-        android:text="Options"
-        android:id="@+id/options" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Friend List"
-        android:id="@+id/friendlist" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id ="@+id/button_current"
+        android:background="@drawable/rectangle"
         android:text="New Duo"
-        android:id="@+id/newduo" />
-
-</LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_newduo"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:id ="@+id/button_friend"
+        android:background="@drawable/rectangle"
+        android:text="New Friend"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_current"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:id ="@+id/button_options"
+        android:background="@drawable/rectangle"
+        android:text="Options"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_friend"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>
