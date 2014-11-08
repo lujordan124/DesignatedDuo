@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.peter.designatedduo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.peter.designatedduo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.MenuActivity"
+            android:label="@string/menu" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.FriendListActivity"
+            android:label="@string/friendlist" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.DrinkCountActivity"
+            android:label="@string/drinkcount" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.SettingsActivity"
+            android:label="@string/settings" >
+        </activity>
+    </application>
+
+</manifest>
