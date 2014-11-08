@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
-</LinearLayout>
+    <ListView
+        android:layout_width="197dp"
+        android:layout_height="140dp"
+        android:id="@+id/currentListView"
+        android:paddingLeft="40dip"
+        android:layout_gravity="right|center_vertical"
+        android:layout_below="@+id/currentTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="189dp"
+        android:layout_height="140dp"
+        android:id="@+id/limitListView"
+        android:paddingLeft="30dip"
+        android:layout_gravity="left|center_vertical"
+        android:layout_alignTop="@+id/currentListView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Drink +1"
+        android:id="@+id/addDrinkButton"
+        android:layout_below="@+id/currentListView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current"
+        android:id="@+id/currentTextView"
+        android:layout_toStartOf="@+id/addDrinkButton"
+        android:layout_toLeftOf="@+id/addDrinkButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limit"
+        android:id="@+id/limitTextView"
+        android:layout_toStartOf="@+id/addDrinkButton"
+        android:paddingLeft="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/currentListView"
+        android:layout_toEndOf="@+id/currentListView"
+        android:layout_alignRight="@+id/limitListView"
+        android:layout_alignEnd="@+id/limitListView" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/timeStamp"
+        android:layout_below="@+id/addDrinkButton"
+        android:paddingLeft="110dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

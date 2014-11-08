@@ -8,5 +8,6 @@
     <string name="friendlist">Friend List</string>
     <string name="drinkcount">Drink Count</string>
     <string name="settings">Settings</string>
+    <string name="title_activity_drink_counter">DrinkCounterActivity</string>
 
 </resources>
