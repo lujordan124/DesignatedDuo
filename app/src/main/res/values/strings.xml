@@ -9,4 +9,10 @@
     <string name="drinkcount">Drink Count</string>
     <string name="settings">Settings</string>
 
+    <!-- string assets for duo menu -->
+    <string name="drinkCount">Drink Counter</string>
+    <string name="myGPS">Where Am I?</string>
+    <string name="duoGPS">Where Are You?</string>
+    <string name="chat">Messages</string>
+
 </resources>

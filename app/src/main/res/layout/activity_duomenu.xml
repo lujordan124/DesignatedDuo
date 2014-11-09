@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/drinkCount"
+        android:id="@+id/drinkCount"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/myGPS"
+        android:id="@+id/myGPS"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/duoGPS"
+        android:id="@+id/duoGPS"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/chat"
+        android:id="@+id/chat"
+        />
+
+</LinearLayout>
