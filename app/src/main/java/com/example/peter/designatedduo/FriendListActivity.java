@@ -4,13 +4,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,12 +31,11 @@ public class FriendListActivity extends Activity {
         final ListView listview = (ListView) findViewById(R.id.friendlist);
         String[] values = new String[]{"Eric Shiao", "Jordan Lu", "Karen Qian", "Peter Shao"};
 
-        final ArrayList<String> list = new ArrayList<String>();
+        /*final ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
-        }
-        final StableArrayAdapter adapter = new StableArrayAdapter(this,
-                android.R.layout.simple_list_item_1, list);
+        }*/
+        final FriendsArrayAdapter adapter = new FriendsArrayAdapter(this, values);
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -45,9 +48,6 @@ public class FriendListActivity extends Activity {
                         .withEndAction(new Runnable() {
                             @Override
                             public void run() {
-                                list.remove(item);
-                                adapter.notifyDataSetChanged();
-                                view.setAlpha(1);
                             }
                         });
             }
@@ -55,28 +55,26 @@ public class FriendListActivity extends Activity {
         });
 
     }
-    private class StableArrayAdapter extends ArrayAdapter<String> {
+    public class FriendsArrayAdapter extends ArrayAdapter<String> {
+        private final Context context;
+        private final String[] values;
 
-        HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
-
-        public StableArrayAdapter(Context context, int textViewResourceId,
-                                  List<String> objects) {
-            super(context, textViewResourceId, objects);
-            for (int i = 0; i < objects.size(); ++i) {
-                mIdMap.put(objects.get(i), i);
-            }
+        public FriendsArrayAdapter(Context context, String [] values) {
+            super(context, R.layout.friend, values);
+            this.context = context;
+            this.values = values;
         }
 
         @Override
-        public long getItemId(int position) {
-            String item = getItem(position);
-            return mIdMap.get(item);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) context
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View rowView = inflater.inflate(R.layout.friend, parent, false);
+            TextView textView = (TextView) rowView.findViewById(R.id.name);
+            ImageView imageView = (ImageView) rowView.findViewById(R.id.pic);
+            textView.setText(values[position]);
+            // change the icon for Windows and iPhone
+            return rowView;
         }
-
-        @Override
-        public boolean hasStableIds() {
-            return true;
-        }
-
     }
 }
