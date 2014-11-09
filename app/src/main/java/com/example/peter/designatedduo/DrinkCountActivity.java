@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-
 public class DrinkCountActivity extends Activity {
 
     @Override
@@ -17,7 +16,6 @@ public class DrinkCountActivity extends Activity {
         setContentView(R.layout.activity_drink_count);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
