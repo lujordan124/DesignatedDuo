@@ -15,5 +15,7 @@
     <string name="myGPS">Where Am I?</string>
     <string name="duoGPS">Where Are You?</string>
     <string name="chat">Messages</string>
+    <string name="title_activity_add_friend">addFriend</string>
+    <string name="title_activity_cotact_fragment">cotactFragment</string>
 
 </resources>
