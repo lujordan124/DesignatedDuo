@@ -32,6 +32,14 @@
             android:name="com.example.peter.designatedduo.SettingsActivity"
             android:label="@string/settings" >
         </activity>
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.example.peter.designatedduo.DrinkCounterActivity"
+            android:label="@string/title_activity_drink_counter" >
+        </activity>
+
+>>>>>>> d0c5ef50d2a96663f5faaff793670698af0a0ab8
     </application>
 
 </manifest>
