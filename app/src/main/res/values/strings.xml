@@ -9,6 +9,8 @@
     <string name="drinkcount">Drink Count</string>
     <string name="settings">Settings</string>
     <string name="title_activity_drink_counter">DrinkCounterActivity</string>
+    <string name="limit">Set Drink Limit</string>
+    <string name="duomenu">Duo Menu</string>
 
     <!-- string assets for duo menu -->
     <string name="drinkCount">Drink Counter</string>
