@@ -34,7 +34,7 @@ public class MenuActivity extends Activity {
         });
         current.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, DrinkCountActivity.class);
+                Intent intent = new Intent(MenuActivity.this, DuoMenuActivity.class);
                 MenuActivity.this.startActivity(intent);
             }
         });
