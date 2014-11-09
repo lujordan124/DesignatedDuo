@@ -17,30 +17,40 @@ public class DuoMenuActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_duomenu);
         Button drinkCount = (Button) findViewById(R.id.drinkCount);
+        Button drinkLimit = (Button) findViewById(R.id.drinkLimit);
         Button myGPS = (Button) findViewById(R.id.myGPS);
         Button duoGPS = (Button) findViewById(R.id.duoGPS);
         Button chat = (Button) findViewById(R.id.chat);
+
         drinkCount.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(DuoMenuActivity.this, FriendListActivity.class);
-                DuoMenuActivity.this.startActivity(intent);
-            }
-        });
-        myGPS.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(DuoMenuActivity.this, FriendListActivity.class);
-                DuoMenuActivity.this.startActivity(intent);
-            }
-        });
-        duoGPS.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(DuoMenuActivity.this, DrinkCountActivity.class);
                 DuoMenuActivity.this.startActivity(intent);
             }
         });
+
+        drinkCount.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(DuoMenuActivity.this, DrinkLimitActivity.class);
+                DuoMenuActivity.this.startActivity(intent);
+            }
+        });
+
+        myGPS.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(DuoMenuActivity.this, MyGPSActivity.class);
+                DuoMenuActivity.this.startActivity(intent);
+            }
+        });
+        duoGPS.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(DuoMenuActivity.this, DuoGPSActivity.class);
+                DuoMenuActivity.this.startActivity(intent);
+            }
+        });
         chat.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(DuoMenuActivity.this, SettingsActivity.class);
+                Intent intent = new Intent(DuoMenuActivity.this, ChatActivity.class);
                 DuoMenuActivity.this.startActivity(intent);
             }
         });

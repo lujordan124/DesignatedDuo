@@ -15,6 +15,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="90dp"
+        android:text="@string/drinkCount"
+        android:id="@+id/drinkLimit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
         android:text="@string/myGPS"
         android:id="@+id/myGPS"
         />
