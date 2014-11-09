@@ -15,7 +15,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="90dp"
+<<<<<<< HEAD
         android:text="Drink Limit"
+=======
+        android:text="@string/drinklimit"
+>>>>>>> 3f6f2f6c2291e394645e3b327e9ae8cb16ab8ef5
         android:id="@+id/drinkLimit"
         />
 

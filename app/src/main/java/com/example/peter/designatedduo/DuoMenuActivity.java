@@ -13,6 +13,7 @@ import android.widget.Toast;
  * Created by Eric on 11/8/2014.
  */
 public class DuoMenuActivity extends Activity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,7 @@ public class DuoMenuActivity extends Activity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_duo, menu);
         return true;
     }
 

@@ -1,6 +1,7 @@
 package com.example.peter.designatedduo;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.graphics.Color;
@@ -63,5 +64,22 @@ public class DrinkLimitActivity extends Activity {
                         Toast.LENGTH_LONG).show();
             }
         });
+=======
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+/**
+ * Created by Eric on 11/9/2014.
+ */
+public class DrinkLimitActivity extends Activity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_drink_limit);
+
+>>>>>>> 3f6f2f6c2291e394645e3b327e9ae8cb16ab8ef5
     }
 }
