@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by Eric on 11/8/2014.
@@ -16,6 +17,10 @@ public class DuoMenuActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_duomenu);
+        Intent myIntent = getIntent();
+        String name = myIntent.getStringExtra("Name");
+        Toast.makeText(getApplicationContext(), "Duo with " + name,
+                Toast.LENGTH_LONG).show();
         Button drinkCount = (Button) findViewById(R.id.drinkCount);
         Button drinkLimit = (Button) findViewById(R.id.drinkLimit);
         Button myGPS = (Button) findViewById(R.id.myGPS);
@@ -29,7 +34,7 @@ public class DuoMenuActivity extends Activity{
             }
         });
 
-        drinkCount.setOnClickListener(new View.OnClickListener() {
+        drinkLimit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(DuoMenuActivity.this, DrinkLimitActivity.class);
                 DuoMenuActivity.this.startActivity(intent);

@@ -6,7 +6,7 @@
     android:id="@+id/activity_menu"
     android:background="#000">
     <Button
-        android:layout_width="96dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id ="@+id/button_current"
         android:layout_centerHorizontal="true"
@@ -14,7 +14,7 @@
         android:text="Current Duo"
         android:layout_marginBottom="16dp"/>
     <Button
-        android:layout_width="96dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id ="@+id/button_newduo"
         android:background="@drawable/rectangle"
@@ -23,16 +23,16 @@
         android:layout_below="@id/button_current"
         android:layout_marginBottom="16dp"/>
     <Button
-        android:layout_width="96dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id ="@+id/button_friend"
         android:background="@drawable/rectangle"
-        android:text="New Friend"
+        android:text="Friends"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/button_newduo"
         android:layout_marginBottom="16dp"/>
     <Button
-        android:layout_width="96dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id ="@+id/button_options"
         android:background="@drawable/rectangle"
