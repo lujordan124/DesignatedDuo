@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-58bd140096d37d71ec1d808a862c2efb6364d3b1.jar"
+        jar="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\pre-dexed\debug\classes-a715980224ff484f29948147bd5b64b5bde57412.jar"
+        jar="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da"/>
+    <item
+        dex="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-8531494a9a0bb7b77e293cf80005a81f6ab5c4a6.jar"
+        jar="C:\Users\Eric\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\pre-dexed\debug\classes-fcc80bd62bb69397054408f7cf275dd64dc09b44.jar"
+        jar="C:\Users\Eric\AndroidStudioProjects\DesignatedDuo\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+
+</pre-dex-items>

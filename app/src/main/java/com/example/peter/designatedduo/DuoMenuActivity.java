@@ -12,6 +12,7 @@ import android.widget.Button;
  * Created by Eric on 11/8/2014.
  */
 public class DuoMenuActivity extends Activity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class DuoMenuActivity extends Activity{
             }
         });
 
-        drinkCount.setOnClickListener(new View.OnClickListener() {
+        drinkLimit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(DuoMenuActivity.this, DrinkLimitActivity.class);
                 DuoMenuActivity.this.startActivity(intent);
@@ -60,7 +61,7 @@ public class DuoMenuActivity extends Activity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_duo, menu);
         return true;
     }
 

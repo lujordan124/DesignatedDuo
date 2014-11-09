@@ -2,6 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.peter.designatedduo" >
 
+    <!-- following are used for google maps access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+         The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- end uses for google maps access -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -21,6 +37,10 @@
             android:label="@string/menu" >
         </activity>
         <activity
+            android:name="com.example.peter.designatedduo.DuoMenuActivity"
+            android:label="@string/duomenu" >
+        </activity>
+        <activity
             android:name="com.example.peter.designatedduo.FriendListActivity"
             android:label="@string/friendlist" >
         </activity>
@@ -29,9 +49,34 @@
             android:label="@string/drinkcount" >
         </activity>
         <activity
+            android:name="com.example.peter.designatedduo.DrinkLimitActivity"
+            android:label="Drink Limit" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.MyGPSActivity"
+            android:label="@string/myGPS" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.DuoGPSActivity"
+            android:label="@string/duoGPS" >
+        </activity>
+        <activity
+            android:name="com.example.peter.designatedduo.ChatActivity"
+            android:label="@string/chat" >
+        </activity>
+        <activity
             android:name="com.example.peter.designatedduo.SettingsActivity"
             android:label="@string/settings" >
         </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAWIBUKtSI2auGC-nFDMC14-dy7e5Rmgco" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
     </application>
 
 </manifest>

@@ -10,6 +10,10 @@ import android.widget.Button;
 
 
 public class SettingsActivity extends Activity {
+    private boolean gpsTrackingEnable; //are we allowed to capture your GPS info
+    private int gpsTrackingRefresh; //how often do you update your GPS info for a friend to track
+    private boolean trackingPasswordRequired; //password protected GPS tracking?
+    private String password; //password if "trackingPasswordRequired" enabled
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
